@@ -1,0 +1,35 @@
+{
+  "name": "AI Shift Hackathon",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {},
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
+  "secrets": {
+    "OPENROUTER_API_KEY": {
+      "description": "Your AI Shift Hackathon key (starts with sk-or-). Paste it from your welcome email."
+    }
+  },
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "bash .devcontainer/setup.sh",
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "START-HERE.md"
+      ]
+    },
+    "vscode": {
+      "settings": {
+        "workbench.startupEditor": "none",
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}
