@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breakthrough Author Live — Write Your Bestselling Book in 4 Weeks</title>
+<meta name="description" content="Write your bestselling book in 4 weeks — and use your book to land $10K–$50K coaching clients. The 4-Week Challenge for coaches. 108 bestsellers published.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>
+  /* Runs before the page draws, so the colours never flash.
+     The full switch logic is in script.js. */
+  (function () {
+    try {
+      var saved = localStorage.getItem('bal-theme');
+      var dark = saved ? saved === 'dark'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<!-- ============================================================
+     TO CHANGE THE BUY BUTTON LINK:
+     Every buy button on this page says href="#checkout".
+     Replace that with your real checkout address, for example:
+     href="https://your-checkout-link.com"
+     (There are several buttons — use Find & Replace.)
+     ============================================================ -->
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <span class="topbar__brand">Breakthrough Author&nbsp;Live</span>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+      <span class="theme-toggle__text">Dark</span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ 1. HERO ============ -->
+<section class="band band--navy hero">
+  <div class="wrap">
+    <p class="eyebrow">Breakthrough Author Live</p>
+    <h1 class="hero__title">Write Your Bestselling Book in 4 Weeks — and Use Your Book to Land $10K–$50K Coaching Clients</h1>
+    <p class="hero__sub">The 4-Week Challenge for Coaches <span class="dot">•</span> 500+ Coaches Have Done This <span class="dot">•</span> 108 Bestsellers and Counting</p>
+
+    <!-- Video. To add your real video, set VIDEO_URL in script.js -->
+    <div class="video" id="videoBox">
+      <button class="video__play" id="videoPlay" type="button" aria-label="Play the video">
+        <span class="video__triangle" aria-hidden="true"></span>
+      </button>
+      <p class="video__label">Watch: How the 4-Week Challenge Works</p>
+      <p class="video__meta">15 minutes</p>
+    </div>
+    <p class="video__note" id="videoNote" hidden>Video coming soon.</p>
+
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+
+    <div class="trustbar">
+      <span class="trustbar__logo">Forbes</span>
+      <span class="trustbar__logo">Inc</span>
+      <span class="trustbar__logo">Entrepreneur</span>
+      <span class="trustbar__item">Hundreds of Trustpilot Reviews</span>
+      <span class="trustbar__item">108 Bestsellers Published</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. SOUND FAMILIAR ============ -->
+<section class="band band--page section">
+  <div class="wrap">
+    <h2 class="h2">Sound Familiar?</h2>
+    <ul class="checklist">
+      <li>I've been thinking about writing my book for years but I can never find the time</li>
+      <li>Other coaches in my space have books — and they're getting the clients I should be getting</li>
+      <li>I'm not a writer, but I know my life experience belongs in a book</li>
+      <li>I don't know how to turn a book into actual coaching clients</li>
+      <li>I'm worried I'll write it and nobody will read it</li>
+      <li>I just don't know where to start</li>
+    </ul>
+    <p class="closing">If any of this sounds like you — you're in the right place.</p>
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+  </div>
+</section>
+
+<!-- ============ 3. ABOUT / CREDIBILITY ============ -->
+<section class="band band--navy section">
+  <div class="wrap about">
+    <div class="avatar avatar--lg" aria-hidden="true">SB</div>
+    <h2 class="h2 h2--onband">My name is Sai Blackburn</h2>
+    <p class="lede">I'm the founder of Coach Foundation.</p>
+    <p>Over the last decade, we've published 108 books for coaches. Every single one became a bestseller.</p>
+    <p>This is a family business. I built this system for my mother's first book — and it changed her life. Since then, we've helped over 500 coaches get their books out into the world.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="stat__num">108</span><span class="stat__label">Bestsellers Published</span></div>
+      <div class="stat"><span class="stat__num">500+</span><span class="stat__label">Coaches Through BAL</span></div>
+      <div class="stat"><span class="stat__num">11</span><span class="stat__label">Cohorts Run</span></div>
+      <div class="stat"><span class="stat__num">10+</span><span class="stat__label">Years in Business</span></div>
+    </div>
+
+    <div class="trustbar trustbar--onband">
+      <span class="trustbar__logo">Forbes</span>
+      <span class="trustbar__logo">Inc</span>
+      <span class="trustbar__logo">Entrepreneur</span>
+      <span class="trustbar__item">Trustpilot</span>
+    </div>
+
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+  </div>
+</section>
+
+<!-- ============ 4. CASE STUDIES ============ -->
+<section class="band band--page section">
+  <div class="wrap">
+    <h2 class="h2">Real Coaches. Real Results.</h2>
+
+    <div class="cards-3">
+    <article class="card">
+      <div class="avatar avatar--md" aria-hidden="true">M</div>
+      <h3 class="card__name">Mynoo</h3>
+      <p class="card__quote">Mynoo wasn't a coach before her book. She was in her sixties with decades of wisdom but no platform.</p>
+      <ul class="results">
+        <li>$500K coaching business in year one</li>
+        <li>United Nations speaker — 4 times</li>
+        <li>Retreat prices went from $5K to $25K</li>
+        <li>3 invitations to Davos this year alone</li>
+      </ul>
+      <p class="card__punch">"All from one book."</p>
+    </article>
+
+    <article class="card">
+      <div class="avatar avatar--md" aria-hidden="true">A</div>
+      <h3 class="card__name">Aila</h3>
+      <p class="card__quote">Aila wanted to bring coaching to Albania — a country where it barely existed.</p>
+      <ul class="results">
+        <li>4 corporate contracts at $50K each</li>
+        <li>$200K in one month</li>
+        <li>Voted second highest rated executive coach in Eastern Europe</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <div class="avatar avatar--md" aria-hidden="true">K</div>
+      <h3 class="card__name">Kaley</h3>
+      <p class="card__quote">Kaley is a health and wellness coach focused on helping people live symptom-free.</p>
+      <ul class="results">
+        <li>Named one of top 10 inspiring women making waves in the world</li>
+        <li>Alongside Michelle Obama</li>
+        <li>Featured in Ariana Huffington's Thrive Global</li>
+      </ul>
+    </article>
+    </div>
+
+    <blockquote class="pullquote">
+      "My book did not just change my business. It changed what people call me — and what room I walk into."
+      <cite>— Mynoo, Breakthrough Author Live graduate</cite>
+    </blockquote>
+
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+  </div>
+</section>
+
+<!-- ============ 5. WHY MOST BOOKS FAIL ============ -->
+<section class="band band--navy section">
+  <div class="wrap">
+    <h2 class="h2 h2--onband">Why Most Coaching Books Fail</h2>
+
+    <div class="wrong">
+      <h3 class="wrong__title"><span class="wrong__mark" aria-hidden="true">✗</span> The book doesn't lead anywhere</h3>
+      <p>Most coaches dump everything they know onto pages. No structure. No path. The reader finishes and thinks "that was nice" — and moves on. No call. No client. No money.</p>
+      <p class="wrong__fix">Your book needs to be built so the reader's last thought is "I need to work with this person."</p>
+    </div>
+
+    <div class="wrong">
+      <h3 class="wrong__title"><span class="wrong__mark" aria-hidden="true">✗</span> Nobody ever sees it</h3>
+      <p>Malcolm Gladwell never ran a single ad for his books. Tony Robbins doesn't run ads. They get people with big audiences to promote them. Most coaches skip this entirely. They put the book on Amazon and wait.</p>
+    </div>
+
+    <div class="wrong">
+      <h3 class="wrong__title"><span class="wrong__mark" aria-hidden="true">✗</span> Author vs BESTSELLING Author</h3>
+      <p>You can get a book on Amazon. But "an author" means nothing — there are over a million of them. A BESTSELLING author? That changes everything. That's what got Mynoo to the United Nations. That's what turned Aila from unknown to $200K in contracts.</p>
+    </div>
+
+    <p class="closing closing--onband">We help you get all three right. In four weeks.</p>
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+  </div>
+</section>
+
+<!-- ============ 6. WHAT YOU GET — WEEK BY WEEK ============ -->
+<section class="band band--page section">
+  <div class="wrap">
+    <h2 class="h2">Here's Exactly What Happens Inside the 4-Week Challenge</h2>
+
+    <div class="weeks-2">
+    <div class="week">
+      <div class="week__art" aria-hidden="true">01</div>
+      <div class="week__body">
+        <p class="week__tag">Week 1</p>
+        <h3 class="week__title">Your Bestseller Book Idea</h3>
+        <p>We validate it, shape it, and our editing team — people who only work with coaching books — make sure it's built to bring you clients.</p>
+        <p class="value">Value: $495</p>
+      </div>
+    </div>
+
+    <div class="week">
+      <div class="week__art" aria-hidden="true">02</div>
+      <div class="week__body">
+        <p class="week__tag">Week 2</p>
+        <h3 class="week__title">Your Chapter-by-Chapter Outline</h3>
+        <p>Every chapter set up so the reader goes on a journey — and by the last page, their next move is to work with you.</p>
+        <p class="value">Value: $400</p>
+      </div>
+    </div>
+
+    <div class="week">
+      <div class="week__art" aria-hidden="true">03</div>
+      <div class="week__body">
+        <p class="week__tag">Week 3</p>
+        <h3 class="week__title">Start Writing</h3>
+        <p>Live coaching plus our editors clean up at least your first chapter. Your words. Your voice. Polished to the point where it's ready to print.</p>
+        <p class="value">Value: $495</p>
+      </div>
+    </div>
+
+    <div class="week">
+      <div class="week__art" aria-hidden="true">04</div>
+      <div class="week__body">
+        <p class="week__tag">Week 4</p>
+        <h3 class="week__title">Your Bestseller Launch Plan</h3>
+        <p>How to get people with audiences to spread the word. The five-day launch window. Which group to put your book in on Amazon. The full step-by-step to hit number one.</p>
+        <p class="value">Value: $495</p>
+      </div>
+    </div>
+    </div>
+
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+  </div>
+</section>
+
+<!-- ============ 7. BONUS STACK ============ -->
+<section class="band band--navy section">
+  <div class="wrap">
+    <h2 class="h2 h2--onband">You Also Get All of This</h2>
+
+    <ul class="bonus">
+      <li class="bonus__item">
+        <h3 class="bonus__title">Expert-Level Editing</h3>
+        <p>Hands-on editing from our team throughout the challenge. Editors who only work on coaching books.</p>
+        <p class="value">Value: $2,000</p>
+      </li>
+      <li class="bonus__item">
+        <h3 class="bonus__title">Breakthrough Author Mastermind</h3>
+        <p>Ongoing support group with me and other coaches. We don't shut the door after 4 weeks. Questions six months from now? We're still there.</p>
+        <p class="value">Value: $5,000</p>
+      </li>
+      <li class="bonus__item">
+        <h3 class="bonus__title">Bestseller Group Database</h3>
+        <p>Which groups on Amazon work for your coaching niche and what it takes to hit number one in each. Data from 100+ launches.</p>
+        <p class="value">Value: $4,000</p>
+      </li>
+      <li class="bonus__item">
+        <h3 class="bonus__title">Podcast Paradise Workshop</h3>
+        <p>How to get podcast hosts to talk about your book to their listeners. We sold tickets for $1,000. Never released to the public.</p>
+        <p class="value">Value: $1,000</p>
+      </li>
+      <li class="bonus__item">
+        <h3 class="bonus__title">Press on Demand Workshop</h3>
+        <p>How to get media to cover your book and your business. Another $1,000 ticket event.</p>
+        <p class="value">Value: $1,000</p>
+      </li>
+      <li class="bonus__item">
+        <h3 class="bonus__title">Real-World Case Studies</h3>
+        <p>Step by step, how coaches in multiple niches built real businesses from their books. Retreats. Contracts. High-ticket coaching.</p>
+        <p class="value">Value: $1,000</p>
+      </li>
+      <li class="bonus__item">
+        <h3 class="bonus__title">Live Listing on Coach Foundation</h3>
+        <p>100,000 visitors a month. We normally charge $200/month. You get it free when your book is done. Because I want the world to find you.</p>
+        <p class="value">Value: $2,000/year</p>
+      </li>
+    </ul>
+
+    <p class="total">Total value: <strong>$13,385</strong></p>
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+  </div>
+</section>
+
+<!-- ============ 8. THE PRICE ============ -->
+<section class="band band--page section" id="checkout">
+  <div class="wrap">
+    <h2 class="h2">Here's Why It's $47</h2>
+    <p class="lede">The regular price for Breakthrough Author Live is $950.</p>
+    <p>Up until now, every coach who's been through this came from inside our community. They already knew us. They already trusted us.</p>
+    <p>You don't know me. You've probably never heard of Coach Foundation before today. And paying $950 to someone you just found on the internet? That's a big ask. I get it.</p>
+    <p>So here's what we're doing and why.</p>
+    <p>We've built a whole team around coaching books. Editors. Designers. Launch people. Media teams. All for coaches. And we're always looking for the next great coach with a book that should be out in the world.</p>
+    <p>Breakthrough Author Live is how we find those coaches.</p>
+    <p>These four weeks let us work together. You get to see what we do. We get to see your idea, how you show up, what you're about. And if after the four weeks it makes sense for us to take your book the rest of the way to bestseller together — great, we'll talk. If not — you walk away with your idea locked in, your outline done, your first chapter edited, and a launch plan you can run with.</p>
+    <p class="closing">Either way, you win.</p>
+
+    <div class="pricebox">
+      <div class="pricebox__row">
+        <span class="pricebox__was">$950</span>
+        <span class="pricebox__arrow" aria-hidden="true">→</span>
+        <span class="pricebox__now">$47</span>
+      </div>
+      <p class="pricebox__code">Use code <strong>[CODE]</strong> at checkout</p>
+    </div>
+
+    <div class="guarantee">
+      <span class="guarantee__badge" aria-hidden="true">✓</span>
+      <p><strong>Money-back guarantee.</strong> Go through all 4 weeks. If you don't feel it was worth your time, full refund. No questions. You keep everything.</p>
+    </div>
+
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+  </div>
+</section>
+
+<!-- ============ 9. WHO THIS IS FOR ============ -->
+<section class="band band--page-alt section">
+  <div class="wrap">
+    <h2 class="h2">Who This Is For</h2>
+    <div class="forfor">
+      <div class="forfor__col forfor__col--yes">
+        <h3 class="forfor__title"><span aria-hidden="true">☑</span> This IS for you if:</h3>
+        <ul class="results results--plain">
+          <li>You're a coach who wants to use a book to grow your business</li>
+          <li>You've been thinking about writing a book for years</li>
+          <li>You want to become a bestselling author</li>
+          <li>You're willing to show up for 4 weeks and do the work</li>
+          <li>You coach in any niche — health, wellness, personal development, business, relationships, executive, or any other area</li>
+        </ul>
+      </div>
+      <div class="forfor__col forfor__col--no">
+        <h3 class="forfor__title"><span aria-hidden="true">✗</span> This is NOT for you if:</h3>
+        <ul class="results results--plain">
+          <li>You want to write fiction, a children's book, or a memoir unrelated to your business</li>
+          <li>Your book isn't connected to a coaching or consulting business</li>
+          <li>You're looking for someone to do 100% of the work with zero involvement from you</li>
+          <li>You're not willing to put in any effort over the 4 weeks</li>
+        </ul>
+      </div>
+    </div>
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+  </div>
+</section>
+
+<!-- ============ 10. FAQ ============ -->
+<section class="band band--page section">
+  <div class="wrap">
+    <h2 class="h2">Questions You Might Have</h2>
+    <div class="faq">
+      <details>
+        <summary>Can I attend if I have calendar conflicts with the live sessions?</summary>
+        <p>Yes. We record every session and we support you outside of the live calls too. We have this very often — many coaches go through the replays and still get everything done.</p>
+      </details>
+      <details>
+        <summary>What if I already have a manuscript or a book started?</summary>
+        <p>Great. We'll refine what you have, structure it properly, and build your launch strategy. You're ahead of the game.</p>
+      </details>
+      <details>
+        <summary>What if it takes me longer than 4 weeks?</summary>
+        <p>That's why the Mastermind stays open. Our focus in Breakthrough Author Live is to get the train moving. Many coaches complete their entire book within 6 months. Some finish during the 4 weeks. Either way, we're there for you after.</p>
+      </details>
+      <details>
+        <summary>Is this just training videos or do you actually help me?</summary>
+        <p>Our editing team actively works on your material. They review your book idea, your outline, and edit your first chapter. This is hands-on, not just information.</p>
+      </details>
+      <details>
+        <summary>What coaching niches does this work for?</summary>
+        <p>All of them. We've published bestsellers across health, wellness, personal development, business, finance, relationships, executive coaching, and many others. The system works regardless of niche.</p>
+      </details>
+      <details>
+        <summary>What's the money-back guarantee?</summary>
+        <p>Go through all 4 weeks. If you don't feel it was worth your time, we'll refund every penny. No questions asked. And you keep everything we've done for you.</p>
+      </details>
+      <details>
+        <summary>Are there any hidden fees?</summary>
+        <p>None. $47 is the total investment for the challenge.</p>
+      </details>
+    </div>
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+  </div>
+</section>
+
+<!-- ============ 11. FINAL CTA ============ -->
+<section class="band band--navy section section--last">
+  <div class="wrap">
+    <h2 class="h2 h2--onband">How long have you been thinking about this book?</h2>
+    <p class="lede">Five years? Ten? Twenty?</p>
+    <p>Every year it gets pushed. And the clients, the speaking gigs, the media, the standing, the legacy — all of it stays on the table. Waiting.</p>
+    <p>You have something that can help people. You've known it for years. Maybe decades.</p>
+    <p>Forty-seven dollars. Four weeks. Your book finally gets out of your head and into the world. Where it belongs.</p>
+    <a class="btn btn--gold btn--block" href="#checkout">Join the Challenge — $47</a>
+    <p class="signoff">My name is Sai Blackburn. This is a family business. I can't wait to see you inside.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>Breakthrough Author Live — Coach Foundation</p>
+    <p class="footer__small">Results shown are from real coaches. Your results depend on your work and your business.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
